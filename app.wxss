@@ -1,0 +1,118 @@
+page{
+background:#F2F2F2;
+font-family: '微软雅黑';
+ width: 100%;
+height: 100%; 
+}
+.auto{
+  width: 680rpx;
+  margin: auto;
+  position: relative;
+}
+.inline{
+  display: inline-block;
+}
+.clear{
+  clear: both;
+}
+.tiao{
+  width: 100%;
+  height: 10rpx;
+}
+.tiao2{
+  width: 100%;
+  height: 13rpx;
+}
+.relative{
+  position: relative;
+}
+.kuang{
+  width: 100%;
+  background: #fff;
+}
+.myToast{
+  width: 100%;
+  line-height: 70rpx; 
+  padding: 0 20rpx;
+  /* border-radius:10rpx; */
+  background: #333333;
+  color:rgb(255,255,255);
+  font-size: 26rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 0; 
+  z-index: 100;
+  opacity: 0.7;
+}
+
+@-webkit-keyframes tips{
+	30% {
+		position: absolute;
+		top: 0;
+	}
+  75% {
+		position: absolute;
+		top: 0;
+	}
+	100% {
+	  position: absolute;
+		top: -60rpx;
+	}
+}
+.myToast2{
+  line-height: 60rpx;
+  height: 60rpx;
+  padding: 5rpx 20rpx;
+  background: rgba(87,103,178,0.8);
+  color:rgb(255,255,255);
+  font-size: 26rpx;
+  text-align: center;
+  position: absolute;
+  top:-60rpx;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  -webkit-animation: tips 3s; 
+}
+.nono1{
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  background: #F2F2F2;
+  font-size: 26rpx;
+  color: #999999;
+  clear: both;
+}
+.nono{
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  background: #F2F2F2;
+  font-size: 26rpx;
+  position: fixed;
+  bottom: 0;
+}
+@keyframes reverseRotataZ{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.noImg{
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  left: 0rpx;
+  -webkit-animation: reverseRotataZ 1.6s linear infinite;
+}
+.nonos{
+  margin:auto;
+  width:260rpx;
+  height:70rpx;
+  text-align: right;
+  position:relative;
+}
+.noText{
+  width: 180rpx;
+  height: 70rpx;
+}

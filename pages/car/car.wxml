@@ -1,0 +1,93 @@
+<!--car.wxml-->
+
+ <view wx:if="{{hasList}}"> 
+<view class="all">
+  <view class="content">
+    <view class="tiao2"></view>
+    <view class="Shop" wx:for="{{content}}" wx:for-item="content" >
+      <view class="shop">
+        <view class="xuan">
+            <icon wx:if="{{content.selected==true}}" bindtap="selectList" type="success_circle" size="24" color="#FF9B00" data-index="{{index}}"/>
+            <icon wx:elif="{{content.selected==false}}" type="circle" bindtap="selectList" size="24" data-index="{{index}}"/> 
+            <icon wx:else type="cancel" color='#FF9B00'/> 
+            <!-- <view wx:if="{{content.selected}}" class="xuan1"><image src="../../images/yuan.png"></image></view>
+            <view wx:else class="xuan1"><image src="../../images/xuan.png"></image></view> -->
+            
+        </view>
+        <view class="shopImg">
+          <image src="{{content.img}}"></image>
+        </view>
+
+        <view class="shopTitle">
+           {{content.title}} 
+        </view>
+        
+        <view wx:if="{{content.norm}}">
+         <view class="shopGuige">
+          规格：{{content.norm}}
+         </view> 
+        </view>
+        <view wx:else>
+        
+        </view>
+
+        <view class="shopNum">数量</view>
+
+        <view class="shopNumber">
+          <view class="shopNumJian" bindtap="jian" data-index="{{index}}" data-carid="{{content.id}}" data-gid="{{content.gid}}" data-normid="{{content.normid}}">
+            <image src="../../images/jian.png"></image>
+          </view>
+            <view class="shopNumbers">{{content.count}}</view> 
+          <view class="shopNumJia" bindtap="jia" data-index="{{index}}" data-max="{{content.max}}" data-carid="{{content.id}}" data-gid="{{content.gid}}" data-normid="{{content.normid}}">
+            <image src="../../images/jia.png"></image>
+          </view>
+          <view class="clear"></view>
+        </view> 
+
+        <view class="shopPrice">￥{{content.price}}</view>
+
+        <view class="shopDel" bindtap="del" data-id="{{content.id}}">
+          <image src="../../images/del.png"></image>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>
+<view style="height:100rpx;"></view>
+<view class="kuang">
+  <view class="footer">
+    <view class="bot">
+      <view class="xuanAll">
+          <view class="All1">
+              <icon class='icon' wx:if="{{selectAllStatus}}" size="24" type="success_circle" color="#FF9B00" bindtap="selectAll"/>
+              <icon class='icon' wx:else type="circle" size="24" bindtap="selectAll"/>
+          </view>
+           <view class="All2"><view class="relative">全选<view class="All_number">（{{allCount}}）</view></view></view> 
+      </view>
+        <view class="submit" bindtap="submit" wx:if="{{qisong}}">结算</view>
+        <view class="submit" wx:else >{{qisongPrice}}元起送</view>
+        <view class="money">￥{{totalPrice}}</view>
+        <view class="heji">合计：</view>
+      
+    </view>
+  </view>
+</view>
+</view>
+<view wx:else>
+  <view style="height:322rpx;"></view>
+  <view class='kong'>
+    <image src="/images/kong.png" ></image>
+  </view>
+  <view style="height:35.15rpx;"></view>
+  <view class="title1">购物车空空如也</view>
+  <view style="height:28rpx;"></view>
+  <view class="title2">
+    <image src="/images/cFont.png"></image>
+  </view>
+  <view style="height:28rpx;"></view>
+  <view class="zouni" bindtap="qu">去逛逛</view>
+</view>
+  <view class="myToast2" hidden="{{nullHouse}}">{{tips}}</view>
+
+  

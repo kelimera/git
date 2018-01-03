@@ -1,0 +1,143 @@
+  <view class='ppa'>
+  <view class='top'>
+    <view class='serach'>
+      <view class='serachLeft' bindtap='fenlei'>
+        <image src='/images/sai.png'></image>
+      </view>
+      <view class='serachRight'>
+        <view class='right'>
+        <view class='serachImg'>
+          <image src='/images/serach.png'></image>
+        </view>
+        <input name='' confirm-type='search' class="serachIpt" placeholder="办公用品大集合，想搜啥就搜啥！" bindconfirm='ss' value="{{value}}" />
+        </view>
+      </view>
+    </view>
+    <view class='serach2'>
+      <view class='serach2list' wx:for='{{sai}}' data-index='{{index}}' bindtap='sx'>
+        <view class='inline' wx:if='{{item.pic}}'>{{item.title}}</view>
+        <view class='inline' wx:else style='color:#F8AE70'>{{item.title}}</view>
+        <image wx:if='{{item.pic}}' src='/images/upjiao.png'></image>
+        <image wx:else src='/images/downjiao.png'></image>
+      </view>
+      <view class='clear'></view>
+      <view class="sxk" animation="{{animation}}" >
+        <view hidden="{{hidden}}" style='position:relative;width:100%;height:100%;'>
+          <view wx:if='{{types==1}}' bindtap='a'>
+
+            <view class='center'>
+              <view class='priceTitle'>价格区间（元）</view>
+              <form bindsubmit="priceSerach">
+                <input name='min'class="priceIpt1" type='number' placeholder="最低价" value="{{min}}" />
+                <view class='hengx'></view>
+                <input name='max'class="priceIpt2" type='number' placeholder="最高价" value="{{max}}" />
+                
+                  <button class="sub" form-type="submit" > 完成 </button>
+
+              </form>
+            </view>
+
+          </view>
+          <view wx:else >
+          
+            <view class='center'>
+              <view class='priceTitle'>品质品牌</view>
+              <view class='pps'>
+                  
+          <view  wx:for="{{pp}}" class="{{item.id==ppt?'pp1':'pp2'}}" bindtap='brand' data-id="{{item.id}}">{{item.title}}</view>
+                  
+                  <view class='clear'></view>
+                  
+                    <button class="sub" bindtap='ppSerach'> 完成 </button>
+
+              </view>
+            </view>
+
+          </view>
+        </view>
+      </view>
+      
+      <view class='clear'></view>
+      
+    </view>
+  </view>
+  <view class='xiaohei' animation="{{xiaohei}}" hidden="{{hidden}}" bindtap='hiddens'></view>
+
+   <view wx:if="{{xgsp}}"  style="width:100%;height:100%;position:relative;"> 
+    <view style='height:1%;'></view>
+      <scroll-view scroll-y class='bottom' bindscrolltolower="lower" bindscroll='scroll' lower-threshold="0" scroll-top="{{tops}}">  
+      <view class='auto'>
+
+        <view wx:for="{{shop}}">
+          <view class='shop' style="float:left"  wx:if="{{(index+1)%2!==0}}" data-gid="{{item.gid}}" bindtap='detail'>
+            <view class='shopImg'>
+              <image src='{{item.picurl}}'></image>
+            </view>
+            <view class='shopInfo'>
+              <view class='shopTitle'>{{item.title}}</view> 
+
+
+              <view class='shopMoney'>
+                <view class='relative'>
+                  <view class='shopMoney1'>￥</view>
+                  <view class='shopMoney2'>{{item.price}}</view>
+                </view>
+              </view>
+              <view class='shopSales'>
+                已卖出<view class='inline sales'>{{item.sales}}件</view>
+              </view>
+
+            </view>
+          </view>
+
+           <view class='shop' wx:if="{{(index+1)%2==0}}" style="float:right" data-gid="{{item.gid}}" bindtap='detail'>
+            <view class='shopImg'>
+              <image src='{{item.picurl}}'></image>
+            </view>
+            <view class='shopInfo'>
+              <view class='shopTitle'>{{item.title}}</view> 
+
+
+              <view class='shopMoney'>
+                <view class='relative'>
+                  <view class='shopMoney1'>￥</view>
+                  <view class='shopMoney2'>{{item.price}}</view>
+                </view>
+              </view>
+              <view class='shopSales'>
+                已卖出<view class='inline sales'>{{item.sales}}件</view>
+              </view>
+
+            </view>
+          </view> 
+
+        </view>
+        
+          
+
+        </view>
+      <view class="nono1" hidden='{{nullHouse}}'>
+       没有更多了
+      </view>
+      </scroll-view>   
+
+
+        <view class='clear'></view>
+    
+   </view>
+  <view wx:else>
+    <view style="height:240rpx;"></view>
+    <view class="img">
+      <image src="/images/soukong.png"></image>
+    </view>
+    <view style="height:40rpx;"></view>
+    <view class="text">抱歉！没有找到相关商品~</view>
+  </view> 
+  <view class="nono" hidden="{{state}}">
+    <view class="nonos">
+    <image class="noImg" src="/images/jiazai.png"></image>
+    {{tips2}}
+    </view>
+  </view>
+
+  </view>

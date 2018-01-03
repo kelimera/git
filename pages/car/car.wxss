@@ -1,0 +1,257 @@
+/**car.wxss**/
+.all{
+  width: 100%;
+}
+.Shop{
+  width: 100%;
+  background:#fff; 
+}
+.shop{
+  height: 205.07rpx;
+  width: 679.6875rpx;
+  margin: auto;
+  position: relative;
+}
+.xuan{
+  width: 29.29rpx;
+  height: 205.07rpx;
+  position: relative;
+  margin-left: -10rpx;
+
+}
+.xuan icon{
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+}
+.xuan1{
+  width: 38rpx;
+  height: 38rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -19rpx;
+}
+.xuan1 image{
+  width: 38rpx;
+  height: 38rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -19rpx;
+}
+
+.shopImg{
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+  top: 26rpx;
+  left: 55.07rpx;
+}
+.shopImg image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.shopTitle{
+  width: 310rpx;
+  line-height: 32.81rpx;
+  font-size: 30rpx;
+  position: absolute;
+  top: 26rpx;
+  left: 225rpx;
+  color: #666666;
+  display: -webkit-box;		
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  height: 65rpx;
+  /* text-indent: -8rpx; */
+}
+.shopGuige{
+  width: 310rpx;
+  line-height: 32.81rpx;
+  font-size: 26rpx;
+  position: absolute;
+  bottom: 76rpx;
+  left: 225rpx;
+  color: #999999;
+}
+.shopNum{
+  font-size: 26rpx;
+  position: absolute;
+  /* top: 125.39rpx; */
+  bottom: 35rpx;
+  left: 225rpx;
+  line-height: 32rpx
+}
+.shopNumber{
+  height: 32rpx;
+  position: absolute;
+  bottom: 35rpx;
+  left: 318.75rpx;
+}
+.shopNumJian{
+  width: 36rpx;
+  height: 36rpx;
+  float: left;
+  /* position: absolute; */
+  /* top: 125.39rpx;
+  left: 318.75rpx; */
+}
+.shopNumJian image{
+  width: 36rpx;
+  height: 36rpx;
+   position: absolute; 
+  /* top: 125.39rpx;
+  left: 318.75rpx; */
+}
+.shopNumJia{
+  width: 36rpx;
+  height: 36rpx;
+  
+  /* position: absolute; */
+  /* top: 125.39rpx;
+  left: 318.75rpx; */
+}
+.shopNumJia image{
+  width: 36rpx;
+  height: 36rpx;
+   position: absolute; 
+  /* top: 125.39rpx;
+  left: 318.75rpx; */
+}
+.shopNumbers{
+  font-size: 26rpx;
+  color: #333333;
+  float: left;
+  padding: 0 14rpx;
+  line-height: 36rpx;
+  min-width: 30rpx;
+  text-align: center; 
+}
+.shopPrice{
+  font-size: 28.125rpx;
+  color: #333333;
+  position: absolute;
+  right: 0;
+  top: 26rpx;
+  line-height: 34rpx;
+}
+.shopDel{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  right: 0;
+  top: 120.7rpx;
+}
+.shopDel image{
+  width: 36.32rpx;
+  height: 39.84rpx;
+  position: absolute;
+}
+.footer{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+}
+.bot{
+  width: 100%;
+  height: 100rpx;
+  margin: auto;
+  position: relative;
+  background: #fff;
+  /* line-height: 100rpx; */
+}
+.submit{
+  width:160rpx;
+  height: 60rpx;
+  background: #FF9B00;
+  line-height: 60rpx;
+  color: #fff;
+  text-align: center;
+  font-size: 30rpx;
+  border-radius: 3px;
+  margin-top: 21rpx; 
+  margin-right: 35.15rpx; 
+  float: right;
+}
+.money{
+  font-size: 29rpx;
+  color: #FF9B00;
+  float: right;
+  margin-right: 25.78rpx;
+  line-height: 100rpx; 
+}
+.heji{
+  font-size: 28rpx;
+  color: #333333;
+  float: right;
+  line-height: 100rpx;
+}
+.All1 icon{
+  position: absolute;
+  top: 50%;
+  left: 35.15rpx;
+  margin-top: -12px;
+}
+.All2{
+  position: absolute;
+  font-size: 26rpx;
+  left: 86rpx;
+  color: #707070;
+  line-height: 100rpx;
+}
+.All_number{
+  font-size: 26rpx;
+  position: absolute;
+  top: 0;
+  left:58rpx;
+  color: #707070;
+}
+.kong{
+  width: 80rpx;
+  height: 75rpx;
+  margin: auto;
+}
+.kong image{
+  width: 80rpx;
+  height: 75rpx;
+}
+.title1{
+  font-size: 37.5rpx;
+  text-align: center;
+  letter-spacing: 2rpx;
+  text-indent: 2rpx;
+  font-family: '黑体';
+  color: #191919;
+}
+.title2{
+  font-size: 28rpx;
+  color: #CFCFCF;
+  text-align: center;
+}
+.title2 image{
+  width: 370rpx;
+  height:26rpx;
+}
+.zouni{
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  background: #FF9B00;
+  font-size: 30rpx;
+  border-radius: 6rpx;
+}
+.nono{
+  width: 100%;
+  height: 60rpx;
+  font-size: 25rpx;
+  line-height: 60rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 100rpx;
+  z-index: 99999;
+  background: #E6E6E6;
+}

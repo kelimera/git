@@ -1,0 +1,86 @@
+.site{
+  width: 679.68rpx;
+  margin: auto;
+  position: relative;
+  font-size: 30rpx;
+  line-height: 103.125rpx;
+}
+.inp{
+  width: 100%;
+  height: 103.125rpx;
+  border-bottom: 1px solid #E6E6E6;
+}
+.Inp{
+  width: 100%;
+  height: 103.125rpx;
+}
+.inp1{
+  position: absolute;
+  left: 3rpx;
+}
+.inp2{
+  position: absolute;
+  left: 140.625rpx;
+  height: 103.125rpx;
+  width: 521.484rpx;
+}
+.sub{
+  position: absolute;
+  width: 550rpx;
+  height: 77rpx;
+  top: 440rpx;
+  left: 50%;
+  margin-left: -275rpx;
+  border-radius: 10rpx;
+}
+.submit{
+  background: #08BB07;
+  text-align: center;
+  line-height: 77rpx;
+  font-size: 28rpx;
+  color: #fff;
+  border: 0;  
+}
+.citypicker{
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+}
+.cityheader{
+  width: 100%;
+  height: 80rpx;
+  position: absolute;
+  z-index: 9999;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  border: 1px solid #E6E6E6;
+}
+.city-cancel{
+  float: left;
+  z-index: 9999;
+}
+.city-true{
+  float:right;
+  z-index: 9999;
+}
+.citypicker{
+  font-size: 28rpx;
+}
+.sitee{
+  line-height: 50px;
+  text-align: center;
+  font-size: 25rpx;
+}
+.city-cancel{
+  width: 120rpx;
+  height: 80rpx;
+  text-align: center;
+  color: #808080;
+}
+.city-true{
+  width: 120rpx;
+  height: 80rpx;
+  text-align: center;
+  color: #08BB07;
+}

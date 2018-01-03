@@ -1,0 +1,74 @@
+<view class="top">
+<image class='topImg' src="{{bgt}}"></image>
+  <view class="tops">
+    <image class='topTx' src="{{userInfo.avatarUrl}}"></image>
+     <view class="topName">{{userInfo.nickName}}</view> 
+  </view>
+</view>
+
+<view class="tiao"></view>
+
+<view class="order">
+  <view style="height:28.125rpx;"></view>
+  <view class="orderS">
+    <view class="orders" bindtap="orderUrl" data-zt="4">
+      <image src="../../images/orders.png" id="orderImg"></image>
+      <view class="ordersText">全部订单</view>
+    </view>
+    <view class="orders" bindtap="orderUrl" data-zt="0">
+      <image src="../../images/fu.png" id="fuImg"></image>
+      <view class="ordersText">代付款</view>
+    </view>
+    <view class="orders" bindtap="orderUrl" data-zt="2">
+      <image src="../../images/shou.png" id="shouImg"></image>
+      <view class="ordersText">待收货</view>
+    </view>
+    <view class="orders" bindtap="orderUrl" data-zt="3">
+      <image src="../../images/ok.png" id="okImg"></image>
+      <view class="ordersText">已完成</view>
+    </view>
+  </view>
+</view>
+<view class='tiao'></view>
+<view class="list">
+  <view class="lists">
+    <!-- <view class="car">
+      <image src="../../images/car2.png" class="carCar"></image>
+      <view class="carText">我的购物车</view>
+      <image src="../../images/right.png" class="right"></image>
+    </view> -->
+     <!-- <view class="car" bindtap="jifen">
+      <image src="../../images/xin.png" class="carCar"></image>
+      <view class="carText">我的收藏</view>
+      <image src="../../images/right.png" class="right"></image>
+    </view>  -->
+    <view class="car" bindtap="site">
+      <image src="../../images/site.png" class="siteSite"></image>
+      <view class="siteText">我的收货地址</view>
+      <image src="../../images/right.png" class="right"></image>
+    </view>
+  </view>
+</view>
+<view class="tiao"></view>
+
+<view class="list">
+  <view class="lists">
+    <view class="site" bindtap="call">
+      <image src="../../images/phone.png" class="siteSite"></image>
+      <view class="siteText">售后电话</view>
+      <view class="shouhouTel">{{tel}}</view>
+    </view>
+  </view>
+</view>
+
+<!-- <view class="tiao"></view>
+
+<view class="list">
+  <view class="lists">
+    <view class="site">
+      <image src="../../images/ssite.png" class="siteSite"></image>
+      <view class="siteText">公司地址</view>
+      <view class="gsdz">{{site}}</view>
+    </view>
+  </view>
+</view> -->

@@ -1,0 +1,134 @@
+<view class="banner"> 
+    <!--swiper 滑动 -->
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{banner}}">
+            <swiper-item catchtap="gos">
+                <image src="{{item.banner}}" class="slide-image"/>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <view class='top'>
+      <view class='result'>
+        <view class='left' bindtap='fenlei'>
+          <image src='/images/sai.png'></image>
+        </view>
+
+        <view class='right'>
+          <view class='serach'>
+            <image src='/images/serach.png'></image>
+          </view>
+            <input name='' confirm-type='search' class="serachIpt" placeholder="办公用品大集合，想搜啥就搜啥！" bindconfirm='ss' value="{{value}}" />
+        </view>
+      </view>
+    </view>
+</view>
+
+<view class='tiao clear'></view>
+
+<view class='nav'>
+  <view class='auto'>
+    <view class='navs' wx:for="{{nav}}" bindtap='list' data-title='{{item.title}}' data-id='{{item.id}}'>
+      <image src='{{item.picurl}}'></image>
+      <view class='navText'>{{item.title}}</view>
+    </view>
+
+    <view class='navs' bindtap='fenlei'>
+      <image src='/images/index_five.png'></image>
+      <view class='navText'>更多</view>
+    </view>
+    
+  </view>
+</view>
+
+<view class='tiao clear'></view>
+
+<view class='banner2'>
+  <image src='{{gg}}'></image>
+</view>
+
+<view class='list' wx:for="{{navs}}">
+  <view class='listTitle'>{{item.title}}</view>
+  <view class='listImg' bindtap='list' data-id='{{item.id}}' data-title='{{item.title}}'>
+    <image src='{{item.picurl}}'></image>
+  </view>
+</view>
+
+<view class='hot'>
+
+  <view class='hotTitle'>
+  <view class='hotLeft'>
+    <view class='relative'>
+      <view class='hotLeft1'></view>
+      <view class='hotLeft2'></view>
+      <view class='hotLeft3'></view>
+    </view>
+  </view>
+  热卖推荐
+  <view class='hotRight'>
+    <view class='relative'>
+      <view class='hotRight1'></view>
+      <view class='hotRight2'></view>
+      <view class='hotRight3'></view>
+    </view>
+  </view>
+  </view>
+
+  <view class='clear'></view>
+
+  <view class='auto'>
+
+    <view wx:for="{{hot}}">
+      <view class='shop' style="float:left"  wx:if="{{(index+1)%2!==0}}" data-gid="{{item.gid}}" bindtap='detail'>
+        <view class='shopImg'>
+          <image src='{{item.picurl}}'></image>
+        </view>
+        <view class='shopInfo'>
+          <view class='shopTitle'>{{item.title}}</view> 
+
+
+          <view class='shopMoney'>
+            <view class='relative'>
+              <view class='shopMoney1'>￥</view>
+              <view class='shopMoney2'>{{item.price}}</view>
+            </view>
+          </view>
+          <view class='shopSales'>
+            已卖出<view class='inline sales'>{{item.sales}}件</view>
+          </view>
+
+        </view>
+      </view>
+
+      <view class='shop' wx:if="{{(index+1)%2==0}}" style="float:right" data-gid="{{item.gid}}" bindtap='detail'>
+        <view class='shopImg'>
+          <image src='{{item.picurl}}'></image>
+        </view>
+        <view class='shopInfo'>
+          <view class='shopTitle'>{{item.title}}</view> 
+
+
+          <view class='shopMoney'>
+            <view class='relative'>
+              <view class='shopMoney1'>￥</view>
+              <view class='shopMoney2'>{{item.price}}</view>
+            </view>
+          </view>
+          <view class='shopSales'>
+            已卖出<view class='inline sales'>{{item.sales}}件</view>
+          </view>
+
+        </view>
+      </view>
+
+      </view>
+
+      <view class="nono1" hidden='{{nullHouse}}'>
+       没有更多了
+      </view>
+
+    </view>
+
+  </view>
+

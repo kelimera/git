@@ -1,0 +1,100 @@
+<view class="kuang" style="background:#F8F8F8;border-bottom: 1px solid #E6E6E6;">
+  <view class="top">
+    <view  data-zt="{{top.zt}}" bindtap="xiu" wx:for="{{top}}" wx:for-item="top" class="{{Type==top.zt?'top2':'top1'}}">{{top.title}}</view>
+  </view>
+</view>
+
+
+<view class="info" wx:if="{{hasList}}">
+  <view wx:for="{{shop}}" wx:for-item="shop">
+     <view class="tiao"></view>
+    <view class="kuang">
+      <view class="shop" >
+
+        <view class="shopTop">
+          <view class="shopTopOrder">订单编号：<view class="orderSn">{{shop.orderSn}}</view></view>
+          <view class="shopTopState" wx:if="{{shop.zt==0}}">等待支付</view>
+          <view class="shopTopState" wx:elif="{{shop.zt==1}}">等待发货</view>
+          <view class="shopTopState" wx:elif="{{shop.zt==2}}">等待收货</view>
+          <view class="shopTopState" wx:elif="{{shop.zt==3}}">已完成</view>
+          
+        </view>
+        <view class="shopContent">
+
+          <view class="ssshop" wx:for="{{shop.sp}}">
+          <view bindtap="detail" data-ordersn="{{shop.orderSn}}">
+          
+            <image src="{{item.img}}" class="shopImg"></image>
+
+            <view class="shopTitle">{{item.title}}</view>
+
+            <view class="shopGuige" wx:if="{{item.norm!=='无'}}">规格：{{item.norm}}</view>
+
+            <view class="shopNum">数量：{{item.num}}</view>
+          </view>
+          </view>
+
+        <view class="shopBot">
+          <view class="shopPrice">
+            <view class="shopPrice1">订单金额：</view>
+            <view class="shopPrice2">￥{{shop.orderPrice}}</view>
+          </view>
+
+          <!-- <view class="shopTime">
+            <view class="shopTime1">下单时间：</view>
+            <view class="shopTime2">{{shop.addTime}}</view>
+          </view> -->
+          <view wx:if="{{shop.zt==0}}">
+            <view class="quxiao" bindtap="del" data-index="{{index}}" data-id="{{shop.orderSn}}">
+            取消支付
+            </view>
+            <view class="submit" bindtap="zhifu" data-code="{{shop.orderSn}}" data-price="{{shop.orderZong}}" data-index="{{index}}">
+              完成支付
+            </view>
+          </view>
+          <view wx:elif="{{shop.zt==1}}">
+            <view wx:if="{{shop.remind==0}}" class="submit" bindtap="tixing" data-sn="{{shop.orderSn}}" data-index="{{index}}">
+              提醒发货
+            </view>
+            <view wx:else class="submit2">提醒发货</view>
+          </view>
+          <view wx:elif="{{shop.zt==2}}">
+            <view class="submit" bindtap="shouhuo" data-sn="{{shop.orderSn}}" data-index="{{index}}">
+              确认收货
+            </view>
+          </view>
+          </view>
+          
+
+        </view>
+
+      </view>
+    </view> 
+  </view>
+
+  
+</view>
+<view wx:else>
+  <view style="height:240rpx;"></view>
+  <view class="orderKongImg">
+    <image src="/images/oKong.png"></image>
+  </view>
+  <view style="height:54rpx;"></view>
+  <view class="title1">您还没有相关的订单</view>
+  <view style="height:28rpx;"></view>
+  
+  <view class="title2">
+    <image src="/images/oFont.png"></image>
+  </view>
+</view>
+
+ <view class="nono1" hidden="{{nullHouse}}">
+    没有更多了
+  </view>
+
+  <view class="nono" hidden="{{state}}">
+    <view class="nonos">
+    <image class="noImg" src="/images/jiazai.png"></image>
+    {{tips2}}
+    </view>
+  </view>

@@ -1,0 +1,97 @@
+.site{
+  width: 679.68rpx;
+   min-height: 186.32rpx; 
+  background: #fff;
+  margin: auto;
+  position: relative;
+}
+.siteSetting{
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1px solid #E6E6E6;
+  position: relative;
+  line-height: 80rpx;
+}
+
+.siteXuan icon{
+  /* width: 40rpx;
+  height: 40rpx; */
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+}
+.siteTitle{
+  color: #666666;
+  font-size: 26rpx;
+  /* width: 200rpx; */
+  position: absolute;
+  left: 60rpx;
+}
+.del{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -20rpx;
+  right: 6rpx;
+}
+.siteInfo{
+  width: 100%;
+  min-height: 124.218rpx; 
+  position: relative;
+  font-size: 23.43rpx;
+  color: #666666;
+}
+.siteInfo1{
+  height: 24rpx;
+  line-height: 24rpx;
+  position: relative;
+  top: 28.125rpx; 
+  font-size: 26rpx;
+}
+.name{
+   float: left; 
+  margin-left: 6rpx;
+}
+.tel{
+   float: left; 
+  margin-left: 28.125rpx;
+}
+.siteInfo2{
+  /* height: 24rpx; */
+  line-height: 30rpx;
+  /* position: absolute;
+  top: 67.96rpx;
+  left: 6rpx; */
+ 
+  font-size: 26rpx;
+  clear: both;
+}
+.siteInfo22{
+  /* text-indent: -0.5em; */
+  line-height: 30rpx;
+  margin-top: 50rpx;
+  margin-bottom: 26rpx;
+  font-size: 26rpx;
+  width: 100%;
+  text-indent: -8rpx;
+  margin-left: 6rpx;
+}
+.siteAdd{
+  width: 679.68rpx;
+  height: 80rpx;
+  background: #fff;
+  margin: auto;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  color: #666666;
+  position: relative;
+}
+.siteAdd image{
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -14rpx;
+}

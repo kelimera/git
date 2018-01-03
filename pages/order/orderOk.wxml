@@ -1,0 +1,67 @@
+<view class="tiao"></view>
+<view class="kuang">
+<view bindtap="site">
+  <view class="order">
+    <view class="orders">
+      <view class="orderTitle">收货信息</view>
+    </view>
+
+    <view class="siteInfo" wx:if="{{sitestate}}">
+      <view class="siteInfo1">
+        <view class="title">收货人：</view>
+        <view class="name">{{name}}</view>
+        <view class="tel">{{tel}}</view>
+      </view>
+      <view class="clear"></view>
+
+      <view class="site">
+        <view class="site1">收货地址：</view>
+        <view class="site2">
+          {{shi}}{{xian}}{{dz}}
+        </view>
+      </view>
+    </view>
+
+    <view wx:else class="siteInfo2">您还没有地址，去添加</view>
+
+  </view>
+</view>
+</view>
+
+<view class="tiao"></view>
+<view class="kuang">
+  <view class="shop">
+
+    <view class="shopList" wx:for="{{content.result}}">
+      <image src="{{item.img}}" class="shopImg"></image>
+      <view class="shopTitle">{{item.title}} </view>
+      <view class="shopPrice">￥{{item.price}}</view>
+      <view class="shopNum">数量：{{item.num}}</view>
+    </view>
+
+    <view class="shopZong">
+      <view class="shopNumber">共{{number}}件商品</view>
+      <view class="shopFu">实付：{{zong}}</view>
+    </view>
+
+    <view class="shopYun">
+      <view class="shopYf">运费</view>
+      <view class="shopYPrice">￥{{yunfei}}</view>
+    </view>
+
+  </view>
+</view>
+
+<view style="height:100rpx;"></view>
+
+<view class="kuang">
+  <view class="footer">
+    <view class="bot">
+      <view class="submit" bindtap="order">结算</view>
+      <view class="money">￥{{heji}}</view>
+      <view class="heji">合计：</view>
+      
+    </view>
+  </view>
+</view>
+  <view class="myToast2" hidden="{{nullHouse}}">{{tips}}</view>

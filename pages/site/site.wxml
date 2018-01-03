@@ -1,0 +1,37 @@
+<view class="tiao"></view>
+<view class="kuang" wx:for="{{site}}" wx:for-item="site" wx:key="name">
+  <view class="site" >
+    <view class="siteSetting">
+
+     <view bindtap="selectList" data-id="{{site.id}}" data-index="{{index}}">
+      <view class="siteXuan">
+            <icon wx:if="{{site.moren==1}}"  type="success_circle" size="24" color="#F98200" />
+            <icon wx:else type="circle" size="24" /> 
+      </view>
+      <view class="siteTitle">设为默认收货地址</view>
+      </view>
+
+      <image src="../../images/delete.png" class="del" bindtap="del" data-index="{{index}}" data-id="{{site.id}}"></image>
+    </view>
+
+    <view class="siteInfo" bindtap="xuan" data-siteid="{{site.id}}">
+      <view class="siteInfo1">
+        <view class="name">{{site.name}}</view>
+        <view class="tel">{{site.tel}}</view>
+        <view class="clear"></view>
+      </view>
+      <view class="clear"></view>
+      <view class="siteInfo22">
+         {{site.dz}} 
+      </view>
+      <view class="clear"></view>
+    </view>
+  </view>
+  <view class="tiao clear" style="background:#E6E6E6"></view>
+</view>
+
+  <view class="kuang">
+    <view class="siteAdd" bindtap="siteAdd">添加新地址
+      <image src="/images/right.png"></image>
+    </view>
+  </view>

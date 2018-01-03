@@ -1,0 +1,59 @@
+<view class="tiao"></view>
+<view class="kuang">
+
+  <view class="order">
+    <view class="orders">
+      <view class="orderTitle">收货信息</view>
+    </view>
+
+    <view class="siteInfo">
+      <view class="siteInfo1">
+        <view class="title">收货人：</view>
+        <view class="name">{{site.name}}</view>
+        <view class="tel">{{site.phone}}</view>
+      </view>
+      <view class="clear"></view>
+
+      <view class="site">
+        <view class="site1">收货地址：</view>
+        <view class="site2">
+          {{site.dizhi}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="tiao"></view>
+<view class="kuang">
+  <view class="shop">
+
+    <view class="shopList" wx:for="{{sp}}">
+      <image src="{{item.img}}" class="shopImg"></image>
+      <view class="shopTitle">{{item.title}} </view>
+      <view class="shopPrice">￥{{item.price}}</view>
+      <view class="shopNum">数量：{{item.num}}</view>
+    </view>
+
+    <view class="shopZong">
+      <view class="shopNumber">共{{info.number}}件商品</view>
+      <view class="shopFu">实付：{{info.zong}}</view>
+    </view>
+
+    <view class="shopYun">
+      <view class="shopYf">运费</view>
+      <view class="shopYPrice">￥{{info.yunfei}}</view>
+    </view>
+
+  </view>
+</view>
+
+
+ <view class="kuang">
+  <view class="footer">
+    <view class="bot">
+      <view class="money">￥{{info.heji}}</view>
+      <view class="heji">合计：</view>
+    </view>
+  </view>
+</view> 

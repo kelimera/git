@@ -1,0 +1,25 @@
+<view class='top'></view>
+
+<view class='left'>
+  <view class="{{class==index?'listL2':'listL1'}}" bindtap='class'  data-index="{{index}}" wx:for="{{left}}" data-id='{{item.id}}'>
+    <view class='ltiao' data-index="{{index}}" hidden="{{class==index?fasle:true}}"></view>
+    {{item.title}}
+  </view>
+  <!-- <view class='listL1'>
+    办公设备
+  </view> -->
+</view>
+
+<view class='right'>
+  <view class='title'>{{title}}</view>
+
+  <view class='listR' wx:for="{{right}}" bindtap="list" data-title='{{item.title}}' data-id='{{item.cid}}'>
+    <image src='{{item.img}}'></image>
+    <view class='listRtext'>{{item.title}}</view>
+  </view>
+  
+  
+ 
+  
+</view>
+

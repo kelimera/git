@@ -1,0 +1,189 @@
+.order{
+  width: 679.68rpx;
+  height: 186.32rpx;
+  background: #fff;
+  margin: auto;
+  position: relative;
+}
+.orders{
+  width: 100%;
+  height: 70rpx;
+  border-bottom: 1px solid #E6E6E6;
+  position: relative;
+  line-height: 70rpx;
+}
+
+.orderTitle{
+  color: #666666;
+  font-size: 30rpx;
+  width: 200rpx;
+  position: absolute;
+  left: 0rpx;
+}
+.siteInfo{
+  width: 100%;
+  height: 124.218rpx;
+  position: relative;
+  font-size: 28rpx;
+  color: #666666;
+}
+.siteInfo2{
+  width: 100%;
+  height: 124.218rpx;
+  position: relative;
+  font-size: 28rpx;
+  color: #666666;
+  line-height: 124.218rpx;
+}
+.siteInfo1{
+  height: 24rpx;
+  line-height: 24rpx;
+  position: absolute;
+  top: 28.125rpx;
+}
+.title{
+  float: left;
+  margin-left: 6rpx;
+}
+.name{
+  float: left;
+  margin-left: 6rpx;
+}
+.tel{
+  float: left;
+   margin-left: 28.125rpx; 
+}
+.site{
+  height: 30rpx;
+  line-height: 30rpx;
+  position: absolute;
+  top: 67.96rpx;
+  left: 6rpx;
+}
+.site1{
+  float: left; 
+}
+.site2{
+  float: left; 
+  margin-left: 6rpx;
+  width: 520rpx;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  white-space:nowrap;  
+}
+.shop{
+  width: 679.68rpx;
+  margin: auto;
+  position: relative;
+}
+.shopList{
+  width: 100%;
+  height: 159.375rpx;
+  position: relative;
+  
+}
+.shopImg{
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  top: 25.78rpx;
+  left: 3.51rpx;
+}
+.shopTitle{
+  line-height: 32rpx;
+  font-size: 26rpx;
+  color: #666666;
+  width: 450rpx;
+  position: absolute;
+  left: 107.81rpx;
+  top: 25.78rpx;
+}
+.shopPrice{
+  font-size: 28rpx;
+  color: #333333;
+  position: absolute;
+  top: 35.15rpx;
+  right: 3.51rpx;
+}
+.shopNum{
+  font-size: 30rpx;
+  color: #666666;
+  position: absolute;
+  top: 80.85rpx;
+  right: 3.51rpx;
+}
+.shopZong{
+  width: 100%;
+  height: 80.85rpx;
+  line-height: 70rpx;
+  position: relative;
+  border-top: 1px solid #EBEBEB;
+  font-size: 30rpx;
+}
+.shopNumber{
+  font-size: 26rpx;
+  color: #9B9B9B;
+  float: right;
+  margin-right: 0rpx;
+}
+.shopFu{
+  font-size: 30rpx;
+  color: #000;
+  float: right;
+  margin-right: 20rpx;
+}
+.shopYun{
+  height: 73.82rpx;
+  width: 100%;
+  position: relative;
+  line-height: 73.82rpx;
+  font-size: 30rpx;
+  color: #333333;
+  border-top: 1px solid #EBEBEB;
+}
+.shopYf{
+  
+}
+.shopYPrice{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.footer{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+}
+.bot{
+  width: 100%;
+  height: 100rpx;
+  margin: auto;
+  position: relative;
+  background: #fff;
+  line-height: 100rpx;
+}
+.submit{
+  width:160rpx;
+  height: 60rpx;
+  background: #E34C8F;
+  line-height: 60rpx;
+  color: #fff;
+  text-align: center;
+  font-size: 30rpx;
+  border-radius: 3px;
+  margin-top: 21rpx; 
+  margin-right: 35.15rpx; 
+  float: right;
+}
+.money{
+  font-size: 29rpx;
+  color: #F98200;
+  float: right;
+  margin-right: 25.78rpx; 
+}
+.heji{
+  font-size: 28rpx;
+  color: #333333;
+  float: right;
+}

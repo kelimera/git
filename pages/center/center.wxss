@@ -1,0 +1,175 @@
+.top{
+  width: 100%;
+  height: 180rpx;
+  position: relative;
+}
+ .tops{
+  width: 679.6875rpx;
+  height: 180rpx;
+  position: relative;
+  margin: auto;
+} 
+.topImg{
+  width: 100%;
+  height: 180rpx;
+  position: absolute;
+}
+.topTx{
+  width: 92rpx;
+  height: 92rpx;
+  position: absolute;
+  top: 28rpx;
+  left: 50%;
+  margin-left: -46rpx;
+  border-radius: 100rpx;
+  border: 4rpx solid white;
+}
+.topName{
+  font-size: 28rpx;
+  color: #FFFFFF;
+  /* position: absolute;
+  top: 56.25rpx; */
+  text-align: center;
+  position: relative;
+  top: 132rpx;
+}
+.topShouhuo{
+  font-size: 26rpx;
+  color: #666666;
+  position: absolute;
+  top: 114rpx;
+  left: 150rpx;
+}
+.order{
+  width: 100%;
+  height: 153.51rpx;
+  background: #fff;
+ 
+}
+.orderS{
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  width: 679.6875rpx;
+  height: 153.51rpx;
+  margin: auto;
+}
+.orders{
+  width: 169.921875rpx;
+  height: 94rpx;
+  position: relative;
+}
+.ordersText{
+  font-size: 26rpx;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 169.921875rpx;
+  text-align: center;
+  color: #666666;
+}
+#orderImg{
+  width: 44rpx;
+  height: 51rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -22rpx;
+}
+#fuImg{
+  width: 54rpx;
+  height: 49rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -27rpx;
+}
+#shouImg{
+  width: 54rpx;
+  height: 47rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -27rpx;
+}
+#okImg{
+  width: 54rpx;
+  height: 49rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -27rpx;
+}
+
+.list{
+  width: 100%;
+  background: #fff;
+}
+.lists{
+  width: 679.6875rpx;
+  margin: auto;
+  position: relative;
+}
+.car{
+  width: 100%;
+  height: 80rpx;
+  position: relative;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  /* border-top: 1px solid #E6E6E6; */
+  color: #333333;
+}
+.carCar{
+  width: 29.52rpx;
+  height: 28.125rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -14.0625rpx;
+}
+.carText{
+  position: absolute;
+  left: 43.35rpx;
+  line-height: 80rpx;
+}
+.site{
+  width: 100%;
+  height: 80rpx;
+  position: relative;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  /* border-bottom: 1px solid #E6E6E6; */
+  color: #333333;
+}
+.siteSite{
+  width: 29.52rpx;
+  height: 28.125rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -14.0625rpx;
+}
+.siteText{
+  position: absolute;
+  left: 43.35rpx;
+  line-height: 80rpx;
+}
+.right{
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -14rpx;
+}
+.shouhouTel{
+  font-size: 28rpx;
+  color: #FF9E07;
+  position:absolute;
+  right: 20rpx;  
+}
+.gsdz{
+  font-size: 28rpx;
+  color: #363636;
+  position:absolute;
+  right: 20rpx; 
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  white-space:nowrap;  
+  width: 470rpx;
+  text-align: right;
+}

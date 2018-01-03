@@ -1,0 +1,99 @@
+  <view class="section section_gap swiper_box" > 
+    <!--swiper 滑动 -->
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{banner}}">
+            <swiper-item catchtap="gos">
+                <image src="{{item.banner}}" class="slide-image" style="height:100%;" bindload="imageLoad"/>
+            </swiper-item>
+        </block>
+    </swiper>
+  </view> 
+
+<view class="kuang">
+  <view class="shopTop">
+    <view class="goodsTitle">{{shop.title}}</view>
+    <view class="goodsreTitle">{{shop.detail}}</view>
+    <view class="goodsPrice">
+      ￥<view class='inline' style="font-size:34rpx;">{{shop.price}}</view>
+    </view>
+  </view>
+</view>
+<view class="tiao2"></view>
+
+<view class='shopInfo'>
+  <view class='auto'>
+
+    <!-- 规格开始 -->
+    <view class='norm' wx:for="{{norm}}" wx:for-item="ite">
+      <view class='normTitle'>{{ite.title}}</view>
+      <view class='normRight'>
+      <radio-group bindchange="radioChange" data-index='{{index}}'>
+      
+        <view wx:for="{{ite.detail}}">
+        <view class="normCont1" wx:if="{{item.checked==true}}">{{item.detail}}
+          <radio value='{{item.id}}' class='radios'></radio>
+          <image src="/images/xz.png"></image>
+        </view>
+        <view class="normCont" wx:else >{{item.detail}}
+          <radio value='{{item.id}}' class='radios'></radio>
+        </view>
+
+        </view>
+
+      </radio-group>
+        
+      </view>
+         <view class='clear'></view> 
+      
+    </view>
+    <view class='clear'></view>
+    <!-- 规格结束 -->
+    <view class="shopNum">
+        <view class="shopNumText">数量</view>
+        <view class="shopNumber">
+
+          <view class="shopNumJian" bindtap="jian">
+            <image src="../../images/jian.png"></image>
+          </view>
+            <view class="shopNumbers">{{shop.count}}</view> 
+          <view class="shopNumJia" bindtap="jia">
+            <image src="../../images/jia.png"></image>
+          </view>
+
+          <view class="clear"></view>
+        </view> 
+    </view>
+    <view class="clear"></view>
+
+
+  </view>
+</view>
+
+<view class="tiao2"></view>
+
+<view class="kuang">
+  <view class="detailTitle">图文详情</view>
+  <view style="background:#E6E6E6;height:1px;"></view>
+  <view wx:if="{{nr}}" style="width:678rpx;margin:auto;">
+    <view style="height:20rpx;"></view>
+  <rich-text wx:if="{{nr}}" nodes="{{nr}}"></rich-text>
+    <view style="height:20rpx;"></view>
+  </view>
+   <view class="detail" wx:for="{{shop_xq}}">
+    <image src="{{item.shop_xq}}" mode="widthFix" style="width:100%;"></image>
+  </view>
+  
+</view>
+
+ <view style="height: 118.36rpx;"></view>
+<view class="bot">
+  <view class="relative">
+    <view class="jiaCar" bindtap="jiaCar">加入购物车</view>
+    <!-- <navigator url="/pages/order/orderOk?goods_id=1&guige={{radioCheckVal}}&number={{shop.count}}" > -->
+      <view class="liCar" bindtap="submit" wx:if="{{qisong}}">立即购买</view>
+      <view class="liCar" wx:else >{{qisongPrice}}元起送</view>
+    <!-- </navigator> -->
+  </view>
+</view> 
+  <view class="myToast2" hidden="{{nullHouse}}">{{tips}}</view>

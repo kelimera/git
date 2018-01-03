@@ -1,0 +1,256 @@
+.banner {
+  width: 100%;
+  height: 343rpx;
+  position: relative;
+}
+swiper.swiper {
+  height: 100%;
+}
+.swiper-item {
+    display: block;
+    height: 100%;
+}
+.slide-image {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  /* overflow: hidden; */
+}
+.top{
+  width: 670rpx;
+  height: 56rpx;
+  position: absolute;
+  top: 14rpx;
+  left: 50%;
+  margin-left: -335rpx;
+  z-index: 9;
+}
+.left{
+  width: 96rpx;
+  height: 56rpx;
+  float: left;
+  position:relative;
+}
+ .left image{
+  width: 58rpx;
+  height: 46rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -23rpx;
+   left: 10%; 
+} 
+.right{
+  position: relative;
+  float: left;
+  background: white;
+  width: 574rpx;
+  height: 56rpx;
+  border-radius: 32rpx;
+}
+.serach{
+  position: relative;
+  left: 24rpx;
+  width: 40rpx;
+  height: 56rpx;
+  float:left;
+}
+.serach image{
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -16rpx; 
+}
+.serachIpt{
+  float:left;
+  margin-left: 30rpx;
+  width: 476rpx;
+  height: 56rpx;
+  font-size: 24rpx;
+}
+.nav{
+  width:100%;
+  height:190rpx;
+  background:#ffffff;
+}
+.navs{
+  width: 20%;
+  height: 190rpx;
+  float: left;
+  position: relative;
+  text-align: center;
+  font-size: 24rpx;
+  color: #333333;
+}
+.navs image{
+  width: 96rpx;
+  height: 96rpx;
+  position: absolute;
+  top: 32rpx;
+  left: 50%;
+  margin-left: -46rpx; 
+}
+.navText{
+  position: absolute;
+  bottom: 20rpx;
+  width: 100%;
+  text-align: center;
+}
+.banner2{
+  width: 100%;
+  height: 306rpx;
+}
+.banner2 image{
+  width: 100%;
+  height: 306rpx;
+}
+
+
+.listTitle{
+  width: 680rpx;
+  height: 70rpx;
+  margin: auto;
+  font-size: 28rpx;
+  color: #000000;
+  line-height: 70rpx;
+  font-weight: 500;
+  background: #F2F2F2;
+  margin-top: 10rpx;
+}
+.listImg{
+  width: 100%;
+  height: 236rpx;
+}
+.listImg image{
+  width: 100%;
+  height: 236rpx;
+}
+
+.hotTitle{
+  width: 100%;
+  height:70rpx;
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: #FE8500;
+  line-height: 70rpx;
+  position: relative;
+}
+.hotLeft{
+  width: 80rpx;
+  height: 70rpx;
+  position: absolute;
+  top: 0;
+  left:30%; 
+}
+.hotLeft1{
+  width: 34rpx;
+  height: 1px;
+  background: #FF9A41;
+  position: absolute;
+  top: 26rpx; 
+  right: 0;
+}
+.hotLeft2{
+  width: 70rpx;
+  height: 1px;
+  background: #FF9A41;
+  position: absolute;
+  top: 35rpx; 
+  right: 0;
+}
+.hotLeft3{
+  width: 47rpx;
+  height: 1px;
+  background: #FF9A41;
+  position: absolute;
+  top: 43rpx; 
+  right: 0;
+}
+.hotRight{
+  width: 80rpx;
+  height: 70rpx;
+  position: absolute;
+  top: 0;
+  right:30%; 
+}
+.hotRight1{
+  width: 34rpx;
+  height: 1px;
+  background: #FF9A41;
+  position: absolute;
+  top: 26rpx; 
+  left: 0;
+}
+.hotRight2{
+  width: 70rpx;
+  height: 1px;
+  background: #FF9A41;
+  position: absolute;
+  top: 35rpx; 
+  left: 0;
+}
+.hotRight3{
+  width: 47rpx;
+  height: 1px;
+  background: #FF9A41;
+  position: absolute;
+  top: 43rpx; 
+  left: 0;
+}
+
+.shop{
+  width: 332rpx;
+  height: 490rpx;
+  margin-bottom: 18rpx;
+}
+.shopImg{
+  width: 332rpx;
+  height: 332rpx;
+}
+.shopImg image{
+  width: 332rpx;
+  height: 332rpx;
+}
+.shopInfo{
+  width: 332rpx;
+  height: 158rpx;
+  position: relative;
+  background: #FAFAFA;
+}
+.shopMoney{
+  color: #F98200;
+  font-size: 20rpx;
+  position: absolute;
+  bottom:12rpx;
+  left: 20rpx;
+}
+.shopMoney1{
+  display: inline-block;
+}
+.shopMoney2{
+  display: inline-block;
+  font-size: 32rpx;
+}
+
+.shopSales{
+  position: absolute;
+  right: 20rpx;
+  bottom: 16rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+.sales{
+  color: #F98200;
+}
+.shopTitle{
+  font-size: 26rpx;
+  color: #333333;
+  padding:16rpx 12rpx;
+  display: -webkit-box;		
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  line-height: 42rpx;
+  height: 74rpx;
+}

@@ -1,0 +1,200 @@
+
+.top{
+  width: 679.68rpx;
+  height: 82rpx;
+  margin: auto;
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  position: relative;
+}
+.top1{
+  /* width: 169.92rpx; */
+  width: 25%;
+  height: 82rpx;
+  font-size: 30rpx;
+  line-height: 82rpx;
+  text-align: center;
+  color: #333333;
+  border-bottom: 1px solid #E6E6E6;
+}
+.top2{
+  /* width: 169.92rpx; */
+  width: 25%;
+  height: 82rpx;
+  font-size: 30rpx;
+  line-height: 82rpx;
+  text-align: center;
+  color: #F98200;
+  border-bottom: 1px solid #F98200;
+}
+.shop{
+  width: 679.68rpx;
+  /* height: 232.03rpx; */
+  margin: auto;
+  position: relative;
+}
+.shopTop{
+  width: 100%;
+  height: 70rpx;
+  font-size: 26rpx;
+  line-height: 70rpx;
+  position: relative;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.orderSn{
+  position: absolute;
+  top: 0;
+  left: 120rpx;
+  
+}
+.shopTopState{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #F98200;
+}
+.shopContent{
+  min-height: 220rpx;
+  width: 100%;
+  position: relative;
+}
+.shopImg{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 17.57rpx;
+}
+.shopTitle{
+  line-height: 31.64rpx;
+  position: absolute;
+  top: 17.57rpx;
+  left: 130rpx;
+  font-size: 28rpx;
+  color: #666666;
+  width: 450rpx;
+  display: -webkit-box;		
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  height: 63rpx;
+}
+.shopGuige{
+  line-height: 31.64rpx;
+  position: absolute;
+  bottom: 17.57rpx;
+  left: 130rpx;
+  font-size: 26rpx;
+  color: #666666;
+  width: 450rpx;
+}
+.shopNum{
+  font-size: 28rpx;
+  color: #666666;
+  position: absolute;
+  top: 49.21rpx;
+  right: 0;
+}
+.shopPrice{
+  font-size: 26rpx;
+  position: absolute;
+  left: 10.54rpx;
+  top: 10rpx; 
+  display: flex;
+  flex-direction:row;
+  line-height: 100rpx;
+  justify-content: flex-start;
+}
+.shopPrice2{
+  color: #F98200;
+}
+.shopTime{
+  font-size: 23rpx;
+  position: absolute;
+  left: 10.54rpx;
+  top: 50rpx; 
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+}
+.quxiao{
+  width: 150rpx;
+  height: 46rpx;
+  border: 1px solid #666666;
+  color: #666666;
+  text-align: center;
+  line-height: 46rpx;
+  font-size: 24rpx;
+  position: absolute;
+  bottom: 20rpx;
+  right: 170rpx;
+}
+.submit{
+  width: 150rpx;
+  height: 46rpx;
+  border: 1px solid #F98200;
+  color: #F98200;
+  text-align: center;
+  line-height: 46rpx;
+  font-size: 24rpx;
+  position: absolute;
+  bottom: 20rpx;
+  right: 0;
+}
+.submit2{
+  width: 150rpx;
+  height: 46rpx;
+  border: 1px solid #999999;
+  color: #999999;
+  text-align: center;
+  line-height: 46rpx;
+  font-size: 24rpx;
+  position: absolute;
+  bottom: 20rpx;
+  right: 0;
+}
+.orderKongImg{
+  width: 140rpx;
+  height: 140rpx;
+  margin: auto;
+  background: #D1D2D4;
+  border-radius: 70rpx;
+  position: relative;
+}
+.orderKongImg image{
+  width: 86rpx;
+  height: 86rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -43rpx;
+  left: 50%;
+  margin-left: -43rpx;
+
+}
+.title1{
+  font-size: 39rpx;
+  text-align: center;
+  letter-spacing: 2rpx;
+  text-indent: 2rpx;
+  font-family: '黑体';
+  color: #191919;
+}
+.title2{
+  text-align: center;
+}
+.title2 image{
+  width: 350rpx;
+  height: 26rpx;
+}
+.ssshop{
+  width: 100%;
+  height: 130rpx;
+  position: relative;
+  border-bottom: 1px solid #F2F2F2;
+}
+.shopBot{
+  width: 100%;
+  height: 100rpx;
+  position: relative;
+}
